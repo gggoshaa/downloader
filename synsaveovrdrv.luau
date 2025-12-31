@@ -2116,7 +2116,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 	local currentstr, currentsize, totalsize, chunks = "", 0, 0, table.create(1)
 	local savebuffer, savebuffer_size = {}, 1
 	local header =
-		'<!-- Saved by ovrdrvDecomps --><roblox version="4">'
+		'<!-- Saved by ovrdrvDecomps. Join to our discord https://discord.gg/C5qjyBQaea --><roblox version="4">'
 
 	local StatusText
 
@@ -3355,7 +3355,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 											end
 										end
 
-										value = "-- Saved by ovrdrvDecomps\n\n"
+										value = "-- Saved by ovrdrvDecomps Join to our discord https://discord.gg/C5qjyBQaea\n\n"
 											.. (hasLinkedSource and "-- Original Source: https://assetdelivery.roblox.com/v1/asset/?" .. (LinkedSource_type or "id") .. "=" .. (LinkedSource or LinkedSource_Url) .. "\n\n" or "")
 											.. value
 									end
@@ -3613,7 +3613,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 		end
 
 		savebuffer[savebuffer_size] =
-			"</roblox><!-- Saved by ovrdrvDecomps -->"
+			"</roblox><!-- Saved by ovrdrvDecomps Join to our discord https://discord.gg/C5qjyBQaea -->"
 		savebuffer_size += 1
 		save_cache(true)
 		do
