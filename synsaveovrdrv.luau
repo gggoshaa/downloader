@@ -2613,7 +2613,7 @@ local function synsaveinstance(CustomOptions, CustomOptions2)
 			placename =
 				sanitizeFileName("model " .. PlaceName .. " " .. (ToSaveInstance or tmp[1] or game):GetFullName())
 		else
-			placename = sanitizeFileName("place " .. PlaceName)
+			placename = sanitizeFileName("[ovrdrvDecompiles] " .. PlaceName)
 		end
 
 		if OPTIONS.AvoidFileOverwrite and isfile then
